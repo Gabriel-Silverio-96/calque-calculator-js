@@ -1,0 +1,252 @@
+//node-sass --watch wwwroot/scss/main.scss wwwroot/css/style.css
+
+@import 'color-variables.scss';
+@import 'animation.scss';
+//@import 'burger.scss';
+
+* { 
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+
+    #config {
+        width: 16px;      
+        transform: rotate(0deg);
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 16px;
+    }   
+
+    #historic {
+        width: 16px;
+        z-index: 100;
+        cursor: pointer;
+        animation: fade 1s;        
+    }
+
+    .list-config {
+        width: 120px;
+        height: 35px;
+        background-color: white;
+        position: absolute;
+        top: 65px;
+        right: 79px;
+        border-radius: 10px;
+        display: none;
+        box-shadow: -7px 21px 32px 5px rgba(0,0,0,0.21);
+
+        ul {
+            list-style: none;
+            margin: 10px 13px;
+            li {
+                font-family: 'Roboto';
+                color: $colorPrimary;
+                font-size: 13px;
+            }
+        }
+    }
+
+    aside {
+        background-color: $colorFifth;
+        width: 260px;
+        height: -webkit-fill-available;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 15px;
+        display: none;
+
+        h3 {
+            margin: 30px 0 0 22px;
+        }
+
+        ul {
+            list-style: none;
+            color: #707070;
+            font-family: roboto;
+            margin-left: 21px;
+            margin-top: 20px;
+
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-size: 15px;    
+    color: white;
+}
+
+.show {
+    display: block !important;
+}
+
+.scroll-on {
+    overflow-y: overlay;
+    height: 90%;
+}
+
+.calque {   
+    position: relative; 
+    background-color: $colorPrimary;    
+    width: 335px; //279
+    height: 450px;
+    margin: auto;
+    padding: 34px 26px;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+
+    input {
+        font-family: 'Roboto', 'sans-serif';
+        margin: 12px auto;
+        display: flex;
+        height: 50px;        
+        text-align: right;
+        font-size: 40px;
+        width: 84%;
+        padding: 7px;
+        background-color: transparent;
+        color: $colorSecondary;
+        border: 0;        
+        width: 80%;
+        margin: 22px auto;
+
+        //animation: 2s fade ease-in-out;
+
+        @keyframes fade {
+            to {
+                opacity: 1;
+            }
+
+            from {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.keyboard {    
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;    
+    margin-bottom: 14px;
+}
+
+button {
+    font-family: 'Roboto', 'sans-serif';
+    outline: none;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;    
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: $colorSecondary;
+    border: 1px solid $colorSecondary;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $btnHoverColor;
+        color: white;        
+        transition: 0.5s;
+    }
+}
+
+.btn-secondary {
+    background-color: $colorThird;
+    color: $colorSecondary;
+    border: none;
+    font-size: 18px;
+}
+
+.btn-third {
+    width: 128px;
+    background-color: $colorFourth;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.btn-black {
+    background-color: black !important;
+}
+
+#backspace {
+    img {
+        width: 23px;
+        margin-top: 5px;
+        margin-right: 2px;
+    }
+}
+
+.size-result {
+    font-size: $sizeResult !important;
+}
+
+.result-background {
+    background-color: white !important;
+    border-radius: 15px;
+}
+
+
+//Modal
+.modal-background {
+    display: none;
+    background-color: $colorFifth;
+    //width: 279px;
+    height: 0px;
+    margin: auto;    
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 1000;
+    text-align: center;
+    
+    h3 {
+        text-align: center;
+        padding: 25px;
+    }
+    
+    img {
+        width: 80px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    #loadImg {
+        margin-top: 60px;
+    }
+}
+
+//Moda header {
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: $colorFifth;
+    width: 383px;    
+
+    img {
+        width: 16px !important;
+        cursor: pointer;
+    }
+}

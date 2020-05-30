@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calque</title>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Style generator call-->
+    <link rel="stylesheet" href="wwwroot/css/style.css">
+</head>
+
+<body>
+    <div class="calque">
+        <header>
+            <!--Logo-->
+            <img src="wwwroot/img/logo-calque.svg" alt="Logo calque">
+            <img id="config" src="wwwroot/img/icons/settings.svg" alt="Configuração">
+            <img id="historic" src="wwwroot/img/icons/clock.svg" alt="Histórico">
+            <div class="list-config">
+                <ul>
+                    <a href="#">
+                        <li id="linkBackground">Background</li>
+                    </a>
+                </ul>
+            </div>
+            <aside>
+                <h3>Histórico</h3>
+                <div class="list-historic">                    
+                </div>
+            </aside>
+        </header>
+        <div class="modal-background">
+            <div class="modal-header">
+                <h3>Selecionar background</h3>
+                <img id="closeModal" src="wwwroot/img/icons/close.svg" alt="Fechar">
+            </div>
+            <div id="loadImg">
+                <img id="removeBackground" src="wwwroot/img/remove-background.png" alt="" srcset="">
+            </div>
+        </div>
+        <!--Result operation math-->
+        <input type="text" id="result">
+        <div class="keyboard">
+            <!-- <button class="btn btn-primary">%</button>-->
+            <button id="clear" class="btn btn-primary" style="width: 128px;">clear</button>
+            <button id="backspace" class="btn btn-primary">
+                <img src="wwwroot/img/icons/backspace.svg" alt="Apagar">
+            </button>
+            <button id="division" class="btn btn-secondary">/</button>
+        </div>
+        <div class="keyboard">
+            <button class="btn btn-primary key">7</button>
+            <button class="btn btn-primary key">8</button>
+            <button class="btn btn-primary key">9</button>
+            <button id="multiply" class="btn btn-secondary">x</button>
+        </div>
+        <div class="keyboard">
+            <button class="btn btn-primary key">4</button>
+            <button class="btn btn-primary key">5</button>
+            <button class="btn btn-primary key">6</button>
+            <button id="subtraction" class="btn btn-secondary">-</button>
+        </div>
+        <div class="keyboard">
+            <button class="btn btn-primary key">1</button>
+            <button class="btn btn-primary key">2</button>
+            <button class="btn btn-primary key">3</button>
+            <button id="sum" class="btn btn-secondary">+</button>
+        </div>
+        <div class="keyboard">
+            <button class="btn btn-primary key">0</button>
+            <button class="btn btn-primary key" disabled>.</button>
+            <button id="equal" class="btn btn-third">=</button>
+        </div>
+    </div>
+
+    <script src="wwwroot/js/main.js"></script>    
+    <script src="wwwroot/js/configBtn.js"></script>
+</body>
+
+</html>

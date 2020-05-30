@@ -1,0 +1,28 @@
+.rotate {    
+    animation: rotate 2s forwards !important;    
+
+    @keyframes rotate {
+        to {
+            transform: rotate(280deg);
+        }
+        
+        from {
+            transform: rotate(0);
+        }
+    }
+}
+
+.show-modal {    
+    display: block !important;
+    animation: down 2s forwards !important;    
+
+    @keyframes down {
+        to {
+            height: 400px;
+        }
+        
+        from {
+            height: 0;
+        }
+    }
+}

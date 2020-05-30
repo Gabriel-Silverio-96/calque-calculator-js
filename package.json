@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "sass": "^1.26.5"
+  },
+  "name": "Calque",
+  "version": "1.0.0",
+  "description": "Calculadora que realiza as principais operações matemáticas, com a opção de personalização do background",
+  "main": "calque.html",
+  "author": "Gabriel Silvério",
+  "license": "MIT"
+}
