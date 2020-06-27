@@ -1,5 +1,5 @@
 <h1 align="center">
-  Calque - Calculadora
+  🔢 Calque - Calculadora
 </h1>
 
 Calculadora que realiza as principais operações matemáticas, contendo também opções de histórico e personalização.
