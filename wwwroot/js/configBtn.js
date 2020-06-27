@@ -51,7 +51,7 @@ for(let i = 0; i < 200; i++) {
     const img = document.createElement('img');
     
     //Url images
-    let imgLoad = `https://i.picsum.photos/id/${i}/500/500.jpg`;    
+    let imgLoad = `https://picsum.photos/id/${i}/500/500.jpg`;    
     img.src = imgLoad;
     
     //Image that didn't load
